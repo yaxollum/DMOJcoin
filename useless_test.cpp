@@ -15,7 +15,7 @@ namespace
     char test_str[]="hello this is DMOJcoin something which nobody will ever use";
 }
 
-int main()
+int test()
 {
 #ifdef TPROG
 	clock_t start = clock();
