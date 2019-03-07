@@ -1,3 +1,6 @@
+#ifndef SHA256
+#define SHA256
+
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
@@ -17,3 +20,4 @@ inline void run_sha_256(const char* input, size_t len, uint8_t* output)
     calc_sha_256(output,reinterpret_cast<const uint8_t*>(input),len);
 }
 
+#endif // SHA256
