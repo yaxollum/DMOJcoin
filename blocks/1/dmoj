@@ -1,0 +1,29 @@
+## Block #1 ##
+Block hash: 3f3f01ac64463d0f0306dfcb616ee23812d81367607aaeb7d9919a46021f81b2
+
+Previous block hash: 3f3f000000000000000000000000000000000000000000000000000000000000
+
+Problem name: helloworld
+
+Problem statement: [link][statement1]
+
+Code: [link][code1]
+
+Points: 1
+
+Solved on: 12/11/2018
+
+Language: C++
+
+Author: ?
+
+Solver: yaxollum
+
+Miner: yaxollum
+
+Comment: Hello World!
+
+Magic word: aaaaakzabm
+
+  [statement1]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/1/problem
+  [code1]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/1/code
