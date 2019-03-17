@@ -3,11 +3,13 @@ Block hash: 3f3f01ac64463d0f0306dfcb616ee23812d81367607aaeb7d9919a46021f81b2
 
 Previous block hash: 3f3f000000000000000000000000000000000000000000000000000000000000
 
-Problem name: helloworld
+Block data: ([link][raw1])
 
-Problem statement: [link][statement1]
+Problem name: helloworld ([link][name1])
 
-Code: [link][code1]
+Problem statement: ([link][statement1])
+
+Code: ([link][code1])
 
 Points: 1
 
@@ -25,5 +27,7 @@ Comment: Hello World!
 
 Magic word: aaaaakzabm
 
+  [raw1]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/1/raw
+  [name1]: https://dmoj.ca/problem/helloworld
   [statement1]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/1/problem
   [code1]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/1/code
