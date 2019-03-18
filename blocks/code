@@ -1,0 +1,55 @@
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+char c_to_n(char c)
+{
+	if (c == 'A' || c == 'B' || c == 'C') return '2';
+	else if (c == 'D' || c == 'E' || c == 'F') return '3';
+	else if (c == 'G' || c == 'H' || c == 'I') return '4';
+	else if (c == 'J' || c == 'K' || c == 'L') return '5';
+	else if (c == 'M' || c == 'N' || c == 'O') return '6';
+	else if (c == 'P' || c == 'Q' || c == 'R' || c == 'S') return '7';
+	else if (c == 'T' || c == 'U' || c == 'V') return '8';
+	else if (c == 'W' || c == 'X' || c == 'Y' || c == 'Z') return '9';
+	else return 0;
+}
+int main()
+{
+	int tests_n;
+	cin >> tests_n;
+	cin.ignore();
+	string raw_num;
+	int chars_read;
+	bool read_real_char;
+	for (int loop = 0; loop < tests_n; ++loop)
+	{
+		getline(cin, raw_num);
+		chars_read = 0;
+
+		for (auto it = raw_num.begin(); it != raw_num.end(); ++it)
+		{
+			read_real_char = false;
+			if (chars_read == 10) break;
+
+			if (*it >= 'A'&&*it <= 'Z')
+			{
+				cout << c_to_n(*it);
+				read_real_char = true;
+			}
+			else if (*it >= '0'&&*it <= '9')
+			{
+				cout << *it;
+				read_real_char = true;
+			}
+
+			if (read_real_char)
+			{
+				++chars_read;
+				if (chars_read == 3 || chars_read == 6) cout << '-';
+			}
+		}
+		cout << endl;
+	}
+}
