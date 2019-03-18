@@ -1,0 +1,91 @@
+Quantum computing is currently a hot topic in research. If they can be built, quantum computers will have the ability to perform certain computing tasks much faster than any computer in existence today. Fortunately, you won't need a quantum computer to do this question.
+
+A fundamental concept in quantum computing is the idea of a quantum operation. A quantum operation can be essentially thought of as a matrix. Also, if you perform two quantum operations in parallel on separate quantum data, this can be thought of a larger quantum operation. Thinking of these operations in terms of matrices again, the resulting matrix from performing two matrices in parallel is called the tensor product of the two matrices (using the symbol ?). This is different than the normal product of matrices that you may have learned about.
+
+In a tensor product, you are given two matrices (which are essentially two-dimensional arrays). We will call them A and B, and we will represent the individual elements of these two matrices this way:
+
+A=???????a11a21?am1a12a22?am2????a1na2n?amn???????, B=???????b11b21?bp1b12b22?bp2????b1qb2q?bpq???????.
+
+Notice that the size of matrix A is m¡Án (m rows and n columns), and the size of B is p¡Áq.
+
+The tensor product of these two matrices will be an mp¡Ánq matrix (with mp rows and nq columns) that looks like:
+
+A?B=???????a11[B]a21[B]?am1[B]a12[B]a22[B]?am2[B]????a1n[B]a2n[B]?amn[B]???????,
+
+where aij[B] simply indicates that each element in B is being multiplied by aij.
+
+Finally notice that the tensor product is not commutative, which means that changing the order of matrices may change the answer (A?B¡ÙB?A).
+
+For more than two matrices, we will define A?B?C=(A?B)?C, although it does not technically matter, since the tensor product is associative.
+
+Your task is to compute and output the tensor product of two or more given matrices.
+
+Input Specification
+The first line of input contains the number of matrices, N, a positive integer. Then, there are N blocks of lines describing the matrices in order.
+
+In each block, the first line will contain two positive integers, r and c, separated by a space, indicating the number of rows and columns, respectively. Then, the next r lines will denote the rows, in order. Each line will contain c integers, separated by spaces.
+
+Output Specification
+The output (to the screen) will be 6 integers in the following order:
+
+the maximum element in the tensor product
+the minimum element in the tensor product
+the maximum row sum (i.e., sum of entries in each row)
+the minimum row sum
+the maximum column sum
+the minimum column sum
+You may assume that tensor product matrix will have no more than 1024 rows and no more than 1024 columns.
+
+Sample Input
+Copy
+2
+2 2
+1 1
+1 -1
+2 2
+1 0
+0 1
+Sample Output
+Copy
+1
+-1
+2
+0
+2
+0
+Actual Tensor Product
+Copy
+1 0 1 0
+0 1 0 1
+1 0 -1 0
+0 1 0 -1
+Sample Input
+Copy
+3
+2 2
+1 0
+0 3
+2 2
+1 1
+1 -1
+2 2
+1 0
+0 1
+Sample Output
+Copy
+3
+-3
+6
+0
+6
+0
+Actual Tensor Product
+Copy
+1 0 1 0 0 0 0 0
+0 1 0 1 0 0 0 0
+1 0 -1 0 0 0 0 0
+0 1 0 -1 0 0 0 0
+0 0 0 0 3 0 3 0
+0 0 0 0 0 3 0 3
+0 0 0 0 3 0 -3 0
+0 0 0 0 0 3 0 -3
