@@ -1,0 +1,33 @@
+## Block #3 ##
+**Block hash:** 3f3f0519d2d2c8e4bb03b7d7fdbbf3ac9b96ad83aac3ba35e320401741c3fd62
+
+**Previous block hash:** 3f3f0515be711ae5aca4194e6b37d6a0ebae5c0979f5c5240b23478bd23880b0
+
+**Block data:** ([link][raw3])
+
+**Problem name:** ccc05s2 ([link][name3])
+
+**Problem statement:** ([link][statement3])
+
+**Code:** ([link][code3])
+
+**Points:** 5
+
+**Solved on:** 12/11/2018
+
+**Language:** C++
+
+**Author:** [user:?]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** Mouse!
+
+**Magic word:** aaaabkmxkf
+
+  [raw3]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/3/raw
+  [name3]: https://dmoj.ca/problem/ccc05s2
+  [statement3]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/3/problem
+  [code3]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/3/code
