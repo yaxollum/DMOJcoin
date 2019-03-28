@@ -1,0 +1,33 @@
+## Block #8 ##
+**Block hash:** 3f3f0326605b45835ced14651debcd8cc308ee222453b2eb6c1140c801accddc
+
+**Previous block hash:** 3f3f054b437691e3469dc7fcadabb64650c085200f3dd1c2d6debbe6401e0575
+
+**Block data:** ([link][raw8])
+
+**Problem name:** aplusb ([link][name8])
+
+**Problem statement:** ([link][statement8])
+
+**Code:** ([link][code8])
+
+**Points:** 3
+
+**Solved on:** 12/11/2018
+
+**Language:** C++
+
+**Author:** [user:?]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** Addition is easy
+
+**Magic word:** aaaabqlqyz
+
+  [raw8]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/8/raw
+  [name8]: https://dmoj.ca/problem/aplusb
+  [statement8]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/8/problem
+  [code8]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/8/code

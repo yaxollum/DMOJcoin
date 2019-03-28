@@ -1,0 +1,33 @@
+## Block #9 ##
+**Block hash:** 3f3f04e07182c8d8655367d5a38df5714f7599db0707b9ec91027245069fe625
+
+**Previous block hash:** 3f3f0326605b45835ced14651debcd8cc308ee222453b2eb6c1140c801accddc
+
+**Block data:** ([link][raw9])
+
+**Problem name:** boolean ([link][name9])
+
+**Problem statement:** ([link][statement9])
+
+**Code:** ([link][code9])
+
+**Points:** 4
+
+**Solved on:** 12/11/2018
+
+**Language:** C++
+
+**Author:** [user:Xyene]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** I should have used Python the first time!
+
+**Magic word:** aaaaarstsz
+
+  [raw9]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/9/raw
+  [name9]: https://dmoj.ca/problem/boolean
+  [statement9]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/9/problem
+  [code9]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/9/code

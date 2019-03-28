@@ -1,0 +1,7 @@
+Alex takes the entire Komputer Kids Klub onto a field trip through time and space. Being all smart and powerful, Alex leads the club into his time machine he invented. However, since Alex is also a procrastinator, he waited until the last second, finishing the time machine just minutes before the club starts, not leaving him enough time to figure out how to make the machine work efficiently.
+
+Alex's time machine works by jumping forward and back through time in regular intervals. For example, the time machine can be configured to jump in intervals of 4 days, which means the time machine is able to travel forward 4 days with at least 1 jump, travel forward 8 days with at least 2 jumps, or travel backward 16 days with at least 4 jumps.
+
+Obviously tired from the hard work put into making the time machine, Alex asks you to help him determine the optimal interval to use to get to the destination time.
+
+His time machine has N different interval options that can be used, and he wishes to take the club to D days into the future, whereas negative D signifies travelling to the past. He wants you to tell him what is the lowest number of jumps the machine has to perform to reach D. Be aware, once an interval is chosen, it cannot be changed. Also, there might be times when D cannot be reached with the available intervals, in that case, output This is not the best time for a trip..

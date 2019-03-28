@@ -1,0 +1,33 @@
+## Block #7 ##
+**Block hash:** 3f3f054b437691e3469dc7fcadabb64650c085200f3dd1c2d6debbe6401e0575
+
+**Previous block hash:** 3f3f030b109f334ae8513e1d972daa51779b10723cffad5934002794ebb1bb5d
+
+**Block data:** ([link][raw7])
+
+**Problem name:** anct1 ([link][name7])
+
+**Problem statement:** ([link][statement7])
+
+**Code:** ([link][code7])
+
+**Points:** 5
+
+**Solved on:** 12/11/2018
+
+**Language:** C++
+
+**Author:** [user:xXxP0t4t0MStRxXx]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** komputer
+
+**Magic word:** aaaaawjmdt
+
+  [raw7]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/7/raw
+  [name7]: https://dmoj.ca/problem/anct1
+  [statement7]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/7/problem
+  [code7]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/7/code
