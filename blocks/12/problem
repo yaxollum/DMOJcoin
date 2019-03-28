@@ -1,0 +1,9 @@
+There is a genre of fiction called choose your own adventure books. These books allow the reader to make choices for the characters which alters the outcome of the story.
+
+For example, after reading the first page of a book, the reader may be asked a choice, such as "Do you pick up the rock?" If the reader answers "yes", they are directed to continue reading on page 47, and if they choose "no", they are directed to continue reading on page 18. On each of those pages, they have further choices, and so on, throughout the book. Some pages do not have any choices, and thus these are the "ending" pages of that version of the story. There may be many such ending pages in the book, some of which are good (e.g., the hero finds treasure) and others which are not (e.g., the hero finds a leftover sandwich from 2001).
+
+You are the editor of one of these books, and you must examine two features of the choose your own adventure book:
+
+ensure that every page can be reached – otherwise, there is no reason to pay to print a page which no one can ever read;
+find the shortest path, so that readers will know what the shortest amount of time they need to finish one version of the story.
+Given a description of the book, examine these two features.

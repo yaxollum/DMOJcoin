@@ -1,0 +1,33 @@
+## Block #17 ##
+**Block hash:** 3f3f064e8e1eaafd337fdb793aa6d5a449089dd47fbb9d7ac70cc6bee3a562d3
+
+**Previous block hash:** 3f3f1001bf1977daf89f900ff0a2a26fc14c3e756e9b3cd1372719c322208e2c
+
+**Block data:** ([link][raw17])
+
+**Problem name:** coci14c2p2 ([link][name17])
+
+**Problem statement:** ([link][statement17])
+
+**Code:** ([link][code17])
+
+**Points:** 6
+
+**Solved on:** 12/20/18
+
+**Language:** C++
+
+**Author:** [user:?]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** I learned the XOR trick after looking at some of the fastest solutions.
+
+**Magic word:** aaaaaaddqu
+
+  [raw17]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/17/raw
+  [name17]: https://dmoj.ca/problem/coci14c2p2
+  [statement17]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/17/problem
+  [code17]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/17/code

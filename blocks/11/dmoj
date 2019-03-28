@@ -1,0 +1,33 @@
+## Block #11 ##
+**Block hash:** 3f3f056afec5e98b80b640f5379c06f9b978cfe1614b7ebbb9ed8e8b01fef2f4
+
+**Previous block hash:** 3f3f059411ae4304508dfd6ebc51a7907ea7195d855fdba2af258b1d93b376de
+
+**Block data:** ([link][raw11])
+
+**Problem name:** bf3 ([link][name11])
+
+**Problem statement:** ([link][statement11])
+
+**Code:** ([link][code11])
+
+**Points:** 5
+
+**Solved on:** 12/11/2018
+
+**Language:** C++
+
+**Author:** [user:?]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** Prime numbers are boring
+
+**Magic word:** aaaacdndoc
+
+  [raw11]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/11/raw
+  [name11]: https://dmoj.ca/problem/bf3
+  [statement11]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/11/problem
+  [code11]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/11/code

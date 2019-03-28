@@ -1,0 +1,33 @@
+## Block #10 ##
+**Block hash:** 3f3f059411ae4304508dfd6ebc51a7907ea7195d855fdba2af258b1d93b376de
+
+**Previous block hash:** 3f3f04e07182c8d8655367d5a38df5714f7599db0707b9ec91027245069fe625
+
+**Block data:** ([link][raw10])
+
+**Problem name:** bf1hard ([link][name10])
+
+**Problem statement:** ([link][statement10])
+
+**Code:** ([link][code10])
+
+**Points:** 5
+
+**Solved on:** 12/11/2018
+
+**Language:** C++
+
+**Author:** [user:?]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** Extremely hard problem!
+
+**Magic word:** aaaaclauuv
+
+  [raw10]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/10/raw
+  [name10]: https://dmoj.ca/problem/bf1hard
+  [statement10]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/10/problem
+  [code10]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/10/code

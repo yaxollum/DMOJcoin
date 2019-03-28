@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int main() 
+{
+    int registered;
+    cin>>registered;
+    
+    int rm1=registered-1;
+    vector<string> all(registered);
+    vector<string> finished(registered);
+    
+    for (int i=0;i<registered;++i) cin>>all[i];
+    for (int i=0;i<rm1;++i) cin>>finished[i];
+    
+    sort(all.begin(),all.end());
+    sort(finished.begin(),finished.end()-1);
+    
+    for (int i=0;i<registered;++i)
+    {
+        if (all[i]!=finished[i])
+        {
+            cout<<all[i];
+            break;
+        }
+    }
+    return 0;
+}

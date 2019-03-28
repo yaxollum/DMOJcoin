@@ -1,0 +1,183 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+struct box
+{
+	char box_type;
+	bool box_visited;
+	int box_step;
+	box() :box_type(0), box_visited(false), box_step(-1) {};
+};
+
+struct factory
+{
+	int _rows;
+	int _cols;
+	int _start;
+	int _step;
+	vector<box> _dat;
+
+	factory(int row_val, int col_val) : _rows(row_val),_cols(col_val),_start(-1),_step(0),_dat(_rows*_cols) {}
+	int factory_size()
+	{
+		return _rows * _cols;
+	}
+	void update_map();
+	int up_of(int i)
+	{
+		if (i - _cols >= 0) return (i - _cols);
+		else return -1;
+	}
+	int down_of(int i)
+	{
+		if (i + _cols < _rows*_cols) return (i + _cols);
+		else return -1;
+	}
+	int left_of(int i)
+	{
+		if (i % _cols > 0) return (i - 1);
+		else return -1;
+	}
+	int right_of(int i)
+	{
+		if (i % _cols < _cols - 1) return (i + 1);
+		else return -1;
+	}
+	void print(ostream& out)
+	{
+		int ss = factory_size();
+		for (int i = 0; i < ss; ++i)
+		{
+			if (i%_cols == 0) out << endl;
+			out << _dat[i].box_type << ' ';
+		}
+	}
+	void print_answer(ostream& out)
+	{
+		int ss = factory_size();
+		for (int i = 0; i < ss; ++i)
+		{
+			if (i != _start)
+			{
+				if (_dat[i].box_type == '.')
+				{
+					cout << _dat[i].box_step << endl;
+				}
+				else if (_dat[i].box_type == 'X')
+				{
+					cout << -1 << endl;
+				}
+			}
+		}
+	}
+	bool step_all_forward();
+private:
+	void update_generic(int i, int (factory::*dir_func)(int));
+	bool take_one_step(int i, int (factory::*dir_func)(int));
+};
+
+void factory::update_generic(int cp,int (factory::*dir_func)(int))
+{
+	cp = (this->*dir_func)(cp);
+	while (cp != -1)
+	{
+		char& dcp = _dat[cp].box_type;
+		if (dcp == 'W'||dcp=='C') break;
+		else if (dcp != 'U'&&dcp != 'D'&&dcp != 'L'&&dcp != 'R')
+		{
+			dcp = 'X';
+		}
+		cp = (this->*dir_func)(cp);
+	}
+}
+
+void factory::update_map()
+{
+	_dat[_start].box_type = '.';
+	int ss = factory_size();
+	for (int i = 0; i < ss; ++i)
+	{
+		if (_dat[i].box_type == 'C')
+		{
+			update_generic(i, &factory::right_of);
+			update_generic(i, &factory::left_of);
+			update_generic(i, &factory::up_of);
+			update_generic(i, &factory::down_of);
+		}
+	}
+	_dat[_start].box_step = 0;
+	_dat[_start].box_visited = true;
+}
+
+bool factory::take_one_step(int i, int(factory::* dir_func)(int))
+{
+	i = (this->*dir_func)(i);
+	bool updated = false;
+
+	while (i != -1 && !_dat[i].box_visited)
+	{
+		const char& dt = _dat[i].box_type;
+		if (dt == 'W' || dt == 'C' || dt == '.' || dt == 'X') break;
+
+		_dat[i].box_visited = true;
+		if (dt == 'U') i = up_of(i);
+		else if (dt == 'D') i = down_of(i);
+		else if (dt == 'L') i = left_of(i);
+		else if (dt == 'R') i = right_of(i);
+	}
+
+	if (i != -1 && _dat[i].box_type == '.' && !_dat[i].box_visited)
+	{
+		_dat[i].box_visited = true;
+		_dat[i].box_step = _step;
+		updated = true;
+	}
+	return updated;
+}
+
+bool factory::step_all_forward()
+{
+	bool any_updated = false;
+	++_step;
+	int ss = factory_size();
+	int last_step = _step - 1;
+
+	bool uu, dd, ll, rr;
+	for (int i = 0; i < ss; ++i)
+	{
+		if (_dat[i].box_step == last_step && _dat[i].box_type=='.')
+		{
+			uu = take_one_step(i, &factory::up_of);
+			dd = take_one_step(i, &factory::down_of);
+			ll = take_one_step(i, &factory::left_of);
+			rr = take_one_step(i, &factory::right_of);
+			
+			any_updated = any_updated || uu || dd || ll || rr;				
+		}
+	}
+	return any_updated;
+}
+
+int main()
+{
+	int rows, cols;
+	cin >> rows;
+	cin >> cols;
+
+	factory fmap(rows,cols);
+	int ss = fmap.factory_size();
+
+	char temp;
+	for (int i = 0; i < ss; ++i)
+	{
+		cin >> temp;
+		fmap._dat[i].box_type = temp;
+		if (temp == 'S') fmap._start = i;
+	}
+
+	fmap.update_map();
+	while (fmap.step_all_forward());
+	fmap.print_answer(cout);
+}

@@ -1,0 +1,33 @@
+## Block #12 ##
+**Block hash:** 3f3f07a1df3f8a055d23d60f705c2080d6e71e0e12b0ae0717fce21a6b85f5d6
+
+**Previous block hash:** 3f3f056afec5e98b80b640f5379c06f9b978cfe1614b7ebbb9ed8e8b01fef2f4
+
+**Block data:** ([link][raw12])
+
+**Problem name:** ccc18j5 ([link][name12])
+
+**Problem statement:** ([link][statement12])
+
+**Code:** ([link][code12])
+
+**Points:** 7
+
+**Solved on:** 12/11/2018
+
+**Language:** C++
+
+**Author:** [user:?]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** My first graph theory problem!
+
+**Magic word:** aaaaacoouc
+
+  [raw12]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/12/raw
+  [name12]: https://dmoj.ca/problem/ccc18j5
+  [statement12]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/12/problem
+  [code12]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/12/code

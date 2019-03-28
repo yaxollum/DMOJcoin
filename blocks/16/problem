@@ -1,0 +1,1 @@
+For every integer n, you are to output n!mod2^32.

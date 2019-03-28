@@ -1,0 +1,33 @@
+## Block #15 ##
+**Block hash:** 3f3f1513d086f7267611cd20e63c7545192351e82715b4df2ef097f2f9f0257e
+
+**Previous block hash:** 3f3f102401fb928aa8df1465f3fc46d2960d91d3c8f6b52bc8519dbc16e648c6
+
+**Block data:** ([link][raw15])
+
+**Problem name:** aplusb2 ([link][name15])
+
+**Problem statement:** ([link][statement15])
+
+**Code:** ([link][code15])
+
+**Points:** 15
+
+**Solved on:** 12/14/18
+
+**Language:** C++
+
+**Author:** [user:?]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** Block #15, my first 15 pointer!
+
+**Magic word:** aaaaaksxiq
+
+  [raw15]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/15/raw
+  [name15]: https://dmoj.ca/problem/aplusb2
+  [statement15]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/15/problem
+  [code15]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/15/code
