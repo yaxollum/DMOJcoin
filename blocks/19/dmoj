@@ -1,0 +1,33 @@
+## Block #19 ##
+**Block hash:** 3f3f07889ec9b9b66c3fed399160a86f395966060c405162189c7aa5327a9291
+
+**Previous block hash:** 3f3f07a732545405eb418de991df990eeb41499649dc3717d388bd8991fa4d2d
+
+**Block data:** ([link][raw19])
+
+**Problem name:** dmopc14c2p4 ([link][name19])
+
+**Problem statement:** ([link][statement19])
+
+**Code:** ([link][code19])
+
+**Points:** 7
+
+**Solved on:** 12/21/18
+
+**Language:** C++
+
+**Author:** [user:Xyene]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** great introduction to dynamic programming
+
+**Magic word:** aaaaamwowp
+
+  [raw19]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/19/raw
+  [name19]: https://dmoj.ca/problem/dmopc14c2p4
+  [statement19]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/19/problem
+  [code19]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/19/code

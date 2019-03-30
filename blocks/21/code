@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <string.h>
+
+#define INF 0x3f3f3f3f
+#define INF_BYTE 0x3f
+#define bool unsigned char
+#define true 1
+#define false 0
+
+struct edat
+{
+    int s,e,t,h;
+};
+
+struct edat edges[10005];
+int res[2005][205];
+
+int main()
+{
+    memset(res,INF_BYTE,sizeof(res));
+
+    int k,m,origin,destination;
+    scanf("%d%*d%d",&k,&m);
+
+    for(int i=0;i<m;++i)
+    {
+        scanf("%d%d%d%d",&edges[i].s,&edges[i].e,&edges[i].t,&edges[i].h);
+    }
+
+    scanf("%d%d",&origin,&destination);
+    memset(res+origin,0,sizeof(int)*205);
+
+    bool updated=true;
+    while(updated)
+    {
+        updated=false;
+        for(int ii=0;ii<m;++ii)
+        {
+            struct edat* edge=&edges[ii];
+            for(int kk=k;kk>edge->h;--kk)
+            {
+                if(res[edge->e][kk-edge->h]>res[edge->s][kk]+edge->t)
+                {
+                    res[edge->e][kk-edge->h]=res[edge->s][kk]+edge->t;
+                    updated=true;
+                }
+                if(res[edge->s][kk-edge->h]>res[edge->e][kk]+edge->t)
+                {
+                    res[edge->s][kk-edge->h]=res[edge->e][kk]+edge->t;
+                    updated=true;
+                }
+            }
+        }
+    }
+
+    int best=INF;
+    for(int kk=k;kk>0;--kk)
+    {
+        if(best>res[destination][kk])
+        {
+            best=res[destination][kk];
+        }
+    }
+    printf("%d\n",best<INF?best:-1);
+}
