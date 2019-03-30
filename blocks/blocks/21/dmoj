@@ -1,0 +1,33 @@
+## Block #21 ##
+**Block hash:** 3f3f15a09850691bbacfa41c91b44f0bc8e4db16af7ce75a4868ff08b1329bda
+
+**Previous block hash:** 3f3f07ffe7d4084aef32676b50286783a4279468b1dab922485f9f8d140eb65e
+
+**Block data:** ([link][raw21])
+
+**Problem name:** ccc15s4 ([link][name21])
+
+**Problem statement:** ([link][statement21])
+
+**Code:** ([link][code21])
+
+**Points:** 15
+
+**Solved on:** 01/11/19
+
+**Language:** C
+
+**Author:** [user:SourSpinach]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** this problem took me a long time to solve
+
+**Magic word:** aaaaaayxsz
+
+  [raw21]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/21/raw
+  [name21]: https://dmoj.ca/problem/ccc15s4
+  [statement21]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/21/problem
+  [code21]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/21/code
