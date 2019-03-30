@@ -1,5 +1,0 @@
-You are travelling on a ship in an archipelago. The ship has a convex hull which is K centimetres thick. The archipelago has N islands, numbered from 1 to N. There are M sea routes amongst them, where the ith route runs directly between two different islands ai and bi; (1¡Üai,bi¡ÜN), takes ti minutes to travel along in either direction, and has rocks that wear down the ship's hull by hi centimetres. There may be multiple routes running between a pair of islands.
-
-You would like to travel from island A to a different island B (1¡ÜA,B¡ÜN) along a sequence of sea routes, such that your ship's hull remains intact ¨C in other words, such that the sum of the routes' hi values is strictly less than K.
-
-Additionally, you are in a hurry, so you would like to minimize the amount of time necessary to reach island B from island A. It may not be possible to reach island B from island A, however, either due to insufficient sea routes or the having the ship's hull wear out.
