@@ -1,0 +1,105 @@
+#include <stdio.h>
+
+struct TwoWayConnection
+{
+    int _start;
+    int _end;
+    TwoWayConnection():_start(-1),_end(-1){}
+};
+
+struct Item
+{
+    int _parent;
+    int _rank;
+
+    Item():_parent(-1),_rank(0){}
+};
+
+Item _dat[100005];
+
+class UnionFind
+{
+
+private:
+
+    int _num_of_trees;
+
+public:
+
+    UnionFind(int n):_num_of_trees(n)
+    {
+        for (int i = 0; i < n; i++) _dat[i]._parent = i;
+    }
+
+    int find_tree(int i)
+    {
+        return (_dat[i]._parent == i) ? i : (_dat[i]._parent = find_tree(_dat[i]._parent)); //path compression
+    }
+
+    bool in_same_tree(int i, int j)
+    {
+        return find_tree(i) == find_tree(j);
+    }
+
+    void merge_trees(int i, int j)
+    {
+        if (!in_same_tree(i, j))
+        {
+            --_num_of_trees;
+            int x = find_tree(i), y = find_tree(j);
+
+            if (_dat[x]._rank > _dat[y]._rank)
+            {
+                _dat[y]._parent = x;
+            }
+            else
+            {
+                _dat[x]._parent = y;
+                if (_dat[x]._rank == _dat[y]._rank) ++_dat[x]._rank;
+            }
+        }
+    }
+
+    int get_num_of_trees()
+    {
+        return _num_of_trees;
+    }
+};
+
+TwoWayConnection edge_list[1000005];
+int tree_edges[100005];
+
+int main()
+{
+    int vertices_n,edges_n;
+    scanf("%d%d",&vertices_n,&edges_n);
+
+    UnionFind forest(vertices_n);
+
+    for(int i=0;i<edges_n;++i)
+    {
+        scanf("%d%d",&edge_list[i]._start,&edge_list[i]._end);
+    }
+
+    int edges_used=0;
+
+    for(int i=0;i<edges_n&&forest.get_num_of_trees()>1;++i)
+    {
+        if(!forest.in_same_tree(edge_list[i]._start,edge_list[i]._end))
+        {
+            tree_edges[edges_used++]=i+1;
+            forest.merge_trees(edge_list[i]._start,edge_list[i]._end);
+        }
+    }
+
+    if (forest.get_num_of_trees()>1)
+    {
+        puts("Disconnected Graph");
+        return 0;
+    }
+
+    for(int j=0;j<edges_used;++j)
+    {
+        printf("%d\n",tree_edges[j]);
+    }
+}

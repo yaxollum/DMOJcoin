@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <string.h>
+
+//#define DEBG
+#define INF 0x3f3f3f3f
+#define MAX 405
+
+int res[MAX][MAX];
+
+int main()
+{
+#ifdef DEBG
+	freopen("C:\\Users\\yaxollum\\programming\\ccc16\\Debug\\dat.txt", "r", stdin);
+#endif
+	
+	int n;
+	scanf("%d", &n);
+
+	memset(res, 0x3f, sizeof(res));
+
+	int mx = 0;
+
+	for (int j = 0; j < n; ++j)
+	{
+		scanf("%d", &res[1][j]);
+		if (res[1][j] > mx) mx = res[1][j];
+	}
+
+	for (int i = 2; i <= n; ++i)
+	{
+		for (int j = 0; i + j <= n; ++j)
+		{
+			for (int ml = 1; ml < i; ++ml)
+			{
+				if (res[ml][j] != INF && 
+					res[i - ml][j + ml] != INF && 
+					res[ml][j] == res[i - ml][j + ml])
+				{
+					res[i][j] = res[ml][j] + res[i - ml][j + ml];
+					if (res[i][j] > mx) mx = res[i][j];
+				}
+			}
+
+			for (int m1 = 1; m1 < i; ++m1)
+			{
+				for (int m2 = 1; m1 + m2 < i; ++m2)
+				{
+					if (res[m1][j] != INF &&
+						res[m2][j + m1] != INF &&
+						res[i - m1 - m2][j + m1 + m2] != INF &&
+						res[m1][j] == res[i - m1 - m2][j + m1 + m2])
+					{
+						res[i][j] = res[m1][j] + res[m2][j + m1] + res[i - m1 - m2][j + m1 + m2];
+						if (res[i][j] > mx) mx = res[i][j];
+					}
+				}
+			}
+		}
+	}
+
+	printf("%d\n", mx);
+}

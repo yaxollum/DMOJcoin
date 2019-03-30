@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int a,b,c,d;
+
+int dat[10000000];
+
+int f(int x)
+{
+    if(x<=0) return 1;
+    if(x>=10000000) return f(x/a-b)+f(x/c-d);
+
+    return dat[x];
+}
+
+int main()
+{
+    int x,q;
+
+    scanf("%d%d%d%d%d",&a,&b,&c,&d,&q);
+
+    for(int x=1;x<10000000;++x)
+    {
+        if((x/a-b)>0) dat[x]+=dat[x/a-b];
+        else ++dat[x];
+
+        if((x/c-d)>0) dat[x]+=dat[x/c-d];
+        else ++dat[x];
+    }
+
+    for(int loop=0;loop<q;++loop)
+    {
+        scanf("%d",&x);
+        printf("%d\n",x<10000000?dat[x]:f(x));
+    }
+}

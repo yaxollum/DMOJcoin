@@ -1,0 +1,9 @@
+Pusheen has been dreaming about tuna sashimi! She has decided that she needs to eat more tuna in her life, so she decides to visit her favourite restaurant to eat tuna sashimi and tuna nigiri.
+
+Pusheen decides to take her helicopter to her favourite restaurant. Due to various regulations, Pusheen is required to fix the helicopter at a specific altitude if she's not taking off or landing, so the helicopter can be effectively treated as traveling in a 2D plane. Due to fuel restrictions, Pusheen will travel only to points (x,y) with nonnegative coordinates further subject to the constraint that x≤X and y≤Y.
+
+The helicopter is a bit finicky to maneuver, so in a single second, Pusheen can only change either the velocity of the helicopter in the x-direction or the y-direction by one unit. Pusheen is not required to change the velocity of the helicopter within a second. Note that the change in velocity happens before the helicopter moves within that second - this means that at the end of every second, Pusheen is guaranteed to be at a lattice point. Pusheen can only board/disembark from the helicopter when it is not moving.
+
+More formally, if Pusheen's location at the beginning of second t is (x,y) and her helicopter's velocity is (vx,vy), and Pusheen decides to change the velocity at the start of that second by (ax,ay), then Pusheen's location at the beginning of second t+1 is (x+vx+ax,y+vy+ay) and her helicopter's velocity is (vx+ax,vy+ay). Pusheen can only board/disembark when vx=vy=0. Pusheen's helicopter will fly through all points on the line segment from (x,y) to (x+vx+ax,y+vy+ay) in that second.
+
+It's also a windy day! Some lattice points have high winds that Pusheen must not fly through at any point in time. Help Pusheen figure out if she can get to her favourite restaurant, and figure out how quickly she can do so!

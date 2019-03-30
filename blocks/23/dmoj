@@ -1,0 +1,33 @@
+## Block #23 ##
+**Block hash:** 3f3f2023d204c6111118c7c2ffa904b411ea3b60cf9b9beb124ea8bfd609c74a
+
+**Previous block hash:** 3f3f12d5d17807ad2220087de7addfc393d027619f96069ffe032c4a0921c7a9
+
+**Block data:** ([link][raw23])
+
+**Problem name:** ccc14s5 ([link][name23])
+
+**Problem statement:** ([link][statement23])
+
+**Code:** ([link][code23])
+
+**Points:** 20
+
+**Solved on:** 01/26/19
+
+**Language:** C++
+
+**Author:** [user:SourSpinach]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** My first 20-pointer (needed a lot of help to solve this problem)
+
+**Magic word:** aaaaabipnr
+
+  [raw23]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/23/raw
+  [name23]: https://dmoj.ca/problem/ccc14s5
+  [statement23]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/23/problem
+  [code23]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/23/code

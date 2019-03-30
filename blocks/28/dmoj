@@ -1,0 +1,33 @@
+## Block #28 ##
+**Block hash:** 3f3f1022605a1e20d8e8a017fd8e5101491a7a18be0eb9690df3c76cb37e58ab
+
+**Previous block hash:** 3f3f04231dbceff257c52b67c2f266a180307843644170bb52f1ba9243bf556c
+
+**Block data:** ([link][raw28])
+
+**Problem name:** ds2 ([link][name28])
+
+**Problem statement:** ([link][statement28])
+
+**Code:** ([link][code28])
+
+**Points:** 10
+
+**Solved on:** 02/07/19
+
+**Language:** C++
+
+**Author:** [user:?]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** I love disjoint sets!
+
+**Magic word:** aaaaafrngc
+
+  [raw28]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/28/raw
+  [name28]: https://dmoj.ca/problem/ds2
+  [statement28]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/28/problem
+  [code28]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/28/code

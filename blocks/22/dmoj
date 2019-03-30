@@ -1,0 +1,33 @@
+## Block #22 ##
+**Block hash:** 3f3f12d5d17807ad2220087de7addfc393d027619f96069ffe032c4a0921c7a9
+
+**Previous block hash:** 3f3f15a09850691bbacfa41c91b44f0bc8e4db16af7ce75a4868ff08b1329bda
+
+**Block data:** ([link][raw22])
+
+**Problem name:** nccc6s3 ([link][name22])
+
+**Problem statement:** ([link][statement22])
+
+**Code:** ([link][code22])
+
+**Points:** 12
+
+**Solved on:** 01/25/19
+
+**Language:** C++
+
+**Author:** [user:?]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** hard
+
+**Magic word:** aaaabbuowt
+
+  [raw22]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/22/raw
+  [name22]: https://dmoj.ca/problem/nccc6s3
+  [statement22]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/22/problem
+  [code22]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/22/code

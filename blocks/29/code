@@ -1,0 +1,115 @@
+#include <stdio.h>
+#include <string.h>
+#include <vector>
+#include <queue>
+
+#define MAX 100005
+
+using namespace std;
+
+char pho[MAX];
+char visited[MAX];
+int dist[MAX];
+vector<int> adj[MAX];
+vector<int> adj2[MAX];
+
+int nn=1;
+
+void dfs_cut(int u)
+{
+    visited[u]=1;
+    for(int v : adj[u])
+    {
+        if(!visited[v])
+        {
+            dfs_cut(v);
+            if(pho[v]||!adj2[v].empty())
+            {
+                adj2[u].push_back(v);
+                adj2[v].push_back(u);
+                ++nn;
+            }
+        }
+    }
+}
+
+int main()
+{
+    int n,m;
+    scanf("%d%d",&n,&m);
+    int uu,vv;
+    for(int loop=0;loop<m;++loop)
+    {
+        scanf("%d",&uu);
+        pho[uu]=1;
+    }
+    int start=uu;
+
+    for(int loop=1;loop<n;++loop)
+    {
+        scanf("%d%d",&uu,&vv);
+        adj[uu].push_back(vv);
+        adj[vv].push_back(uu);
+    }
+
+    dfs_cut(start);
+
+    /*
+    for(int p=0;p<n;++p)
+    {
+        printf("%d: ",p);
+        for(int v : adj2[p])
+        {
+            printf("%d ",v);
+        }
+        putchar('\n');
+    }
+    */
+
+    queue<int> qq;
+    int farthest;
+    qq.push(start);
+    memset(visited,0,sizeof(visited));
+    visited[start]=1;
+    int u;
+    while(!qq.empty())
+    {
+        u=qq.front();
+        qq.pop();
+
+        for(int v : adj2[u])
+        {
+            if(!visited[v])
+            {
+                qq.push(v);
+                farthest=v;
+                visited[v]=1;
+            }
+        }
+    }
+
+    queue<int>().swap(qq);
+    memset(visited,0,sizeof(visited));
+    qq.push(farthest);
+    visited[farthest]=1;
+    int last;
+
+    while(!qq.empty())
+    {
+        u=qq.front();
+        qq.pop();
+
+        for(int v : adj2[u])
+        {
+            if(!visited[v])
+            {
+                qq.push(v);
+                visited[v]=1;
+                dist[v]=dist[u]+1;
+                last=v;
+            }
+        }
+    }
+
+    printf("%d\n",2*(nn-1)-dist[last]);
+}

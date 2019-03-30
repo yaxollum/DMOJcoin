@@ -1,0 +1,33 @@
+## Block #30 ##
+**Block hash:** 3f3f151cb20ae90cf9c872fa01a661135c4b3ec60f4df856b1aaecf28c181ef3
+
+**Previous block hash:** 3f3f1582d22ca172d6872ede2f2b60d7010c334d0c821ad69bf44f7bca6739bf
+
+**Block data:** ([link][raw30])
+
+**Problem name:** ccc12s4 ([link][name30])
+
+**Problem statement:** ([link][statement30])
+
+**Code:** ([link][code30])
+
+**Points:** 15
+
+**Solved on:** 02/09/19
+
+**Language:** C++
+
+**Author:** [user:?]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** debugging was extremely frustrating
+
+**Magic word:** aaaadrbdig
+
+  [raw30]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/30/raw
+  [name30]: https://dmoj.ca/problem/ccc12s4
+  [statement30]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/30/problem
+  [code30]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/30/code

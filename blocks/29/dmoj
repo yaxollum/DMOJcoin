@@ -1,0 +1,33 @@
+## Block #29 ##
+**Block hash:** 3f3f1582d22ca172d6872ede2f2b60d7010c334d0c821ad69bf44f7bca6739bf
+
+**Previous block hash:** 3f3f1022605a1e20d8e8a017fd8e5101491a7a18be0eb9690df3c76cb37e58ab
+
+**Block data:** ([link][raw29])
+
+**Problem name:** ccc16s3 ([link][name29])
+
+**Problem statement:** ([link][statement29])
+
+**Code:** ([link][code29])
+
+**Points:** 15
+
+**Solved on:** 02/07/19
+
+**Language:** C++
+
+**Author:** [user:Kuroba]
+
+**Solver:** [user:yaxollum]
+
+**Miner:** [user:yaxollum]
+
+**Comment:** needed a LOT of help!
+
+**Magic word:** aaaaadpyqg
+
+  [raw29]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/29/raw
+  [name29]: https://dmoj.ca/problem/ccc16s3
+  [statement29]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/29/problem
+  [code29]: https://raw.githubusercontent.com/yaxollum/DMOJcoin/master/blocks/29/code
