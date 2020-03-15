@@ -1,1 +1,0 @@
-A boolean value can be either True or False. Given a string with less than 1000 characters with a number of space-separated not directives terminated by a True or False value, evaluate the boolean expression.

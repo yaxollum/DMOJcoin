@@ -1,9 +1,0 @@
-One day you woke up, finding yourself back in 1992. It would seem that the gypsy wife of the wizened old monk whose voodoo shop you smash up every day after school has cast a spell on you.
-
-Early in the production process of the 80386, Intel discovered a fatal bug in the processor, which they of course fixed. The bug involved errors when performing 32-bit multiplication. But by the time they fixed the issue, a number of processors were already produced, and they decided that it would be a shame to throw them all out. It was decided that these processors would be sold at a reduced price with the tag 16 BIT S/W ONLY (16 bit software only). Conversely, the newer processors which don't have the bug instead have two sigmas (¦²¦²) stamped on. We will call them DOUBLE SIGMA processors.
-
-Back in 1985, 32-bit software was something out of reach of most consumers. Even in 1989, the ancient 8086 was sold as new technology. Hence, there is a market for the defective processors.
-
-You, a programmer, decided to get a programming job in the 1992 world so you can survive until you find a way to return to the modern age. In a cluster of servers, some of them use the 16 BIT S/W ONLY processors, but you don't know which ones. Your first job is to determine the bad processors from the 32-bit multiplication results.
-
-The 80386 has an instruction to multiply two 32-bit integers into a 64-bit result, conventionally stored in EDX:EAX register (i.e. temporary variable) pairs because there were no 64-bit registers.

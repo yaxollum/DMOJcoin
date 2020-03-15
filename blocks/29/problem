@@ -1,7 +1,0 @@
-Jo is a blogger, specializing in the critique of restaurants. Today, she wants to visit all the Vietnamese Pho restaurants in the Waterloo area, in order to determine which one is the best.
-
-There are N restaurants in the city of Waterloo, numbered 0 to N−1. However, only M of them are Pho restaurants. Jo can choose to start at any restaurant. There are N−1 roads in Waterloo, each road connecting exactly two restaurants. It is possible to reach every restaurant from any restaurant using these roads. It takes Jo exactly 1 minute to travel along any road.
-
-One property that is true for all trees is that there is exactly one path that does not repeat any roads between any two points in the tree.
-
-What is the minimal length of time that Jo needs to spend on traveling on roads to visit all of the Pho restaurants?

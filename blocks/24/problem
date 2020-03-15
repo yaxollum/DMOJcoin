@@ -1,7 +1,0 @@
-NOTE: The test data for this problem are stronger than the contest version. Solutions that AC there may not get AC here.
-
-Pusheen is playing Neko Atsume! She has a lot of toys and has laid them out to maximize her fish income. She wants to know how efficient her layout will be though.
-
-After doing a lot of critical thinking and real-time programming, Pusheen has boiled down the fish income in terms of a single variable - the beauty of the arrangement of toys. She thus defines f(x) to be the fish income given that her layout has beauty x. After some more computation, Pusheen has realized that for all x \le 0, f(x) = 1. Otherwise, f(x) = f\left(\left \lfloor \frac{x}{a} - b \right\rfloor \right) + f\left(\left\lfloor \frac{x}{c} - d \right\rfloor \right).
-
-Pusheen has Q layouts, layout i having beauty x_i. Compute f(x_i) for many values of x_i.
