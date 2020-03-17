@@ -1,3 +1,4 @@
+// from https://github.com/amosnier/sha-2 (public domain equivalent license)
 #ifndef SHA256
 #define SHA256
 
