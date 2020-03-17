@@ -1,3 +1,4 @@
+// from https://github.com/amosnier/sha-2 (public domain equivalent license)
 #include "sha-256.h"
 
 #define CHUNK_SIZE 64
